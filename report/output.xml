@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-24T15:55:37.914262" rpa="false" schemaversion="5">
+<suite id="s1" name="Start" source="C:\Noesis\Robot_Web\start.robot">
+<test id="s1-t1" name="Teste de Login com Username e Password correctos" line="24">
+<kw name="Aceder ao site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:38.337071" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-24T15:55:38.336906" elapsed="5.305651"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath://input[@name="username"]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-24T15:55:43.642888" elapsed="0.574321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:44.217768" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>xpath://input[@name="username"]</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T15:55:44.217443" elapsed="0.062785"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:44.280613" level="INFO">Typing text 'admin123' into text field 'xpath://input[@placeholder="Password"]'.</msg>
+<arg>xpath://input[@placeholder="Password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T15:55:44.280398" elapsed="0.087706"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:44.368584" level="INFO">Clicking button 'xpath://button[text()=" Login "]'.</msg>
+<arg>xpath://button[text()=" Login "]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T15:55:44.368333" elapsed="1.781015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T15:55:51.150583" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T15:55:46.149540" elapsed="5.001315"/>
+</kw>
+<kw name="Page Should Contain Image" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:51.168082" level="INFO">Current page contains image '//img[@src="/web/images/orange.png?v=1721393199309"]'.</msg>
+<arg>//img[@src="/web/images/orange.png?v=1721393199309"]</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-01-24T15:55:51.151104" elapsed="0.017067"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:51.283705" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-24T15:55:51.168311" elapsed="0.115512"/>
+</kw>
+<status status="PASS" start="2025-01-24T15:55:38.336348" elapsed="12.947610"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:51.284589" level="INFO">Clicking link '//a[@href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>//a[@href="/web/index.php/admin/viewAdminModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T15:55:51.284385" elapsed="1.026716"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T15:55:55.312823" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T15:55:52.312179" elapsed="3.000929"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-24T15:55:55.346925" level="INFO">Element '//h6[text()="User Management"]' is displayed.</msg>
+<arg>//h6[text()="User Management"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-24T15:55:55.313868" elapsed="0.033181"/>
+</kw>
+<tag>login</tag>
+<status status="PASS" start="2025-01-24T15:55:38.335663" elapsed="17.011881"/>
+</test>
+<status status="PASS" start="2025-01-24T15:55:37.922836" elapsed="17.425537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+</tag>
+<suite>
+<stat name="Start" id="s1" pass="1" fail="0" skip="0">Start</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
