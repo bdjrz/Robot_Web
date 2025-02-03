@@ -1,194 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-30T14:23:30.321003" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-28T20:00:59.040083" rpa="false" schemaversion="5">
 <suite id="s1" name="Desafio001" source="C:\Noesis\Robot_Web\desafio001.robot">
 <test id="s1-t1" name="Preencher o formulario" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:30.755451" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-01-28T20:00:59.475312" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>https://testautomationpractice.blogspot.com/</arg>
 <arg>browser=chrome</arg>
 <arg>options=add_argument("--start-maximized")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-30T14:23:30.755208" elapsed="5.068388"/>
+<status status="PASS" start="2025-01-28T20:00:59.475042" elapsed="4.034592"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>xpath://input[@id="name"]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-01-30T14:23:35.824065" elapsed="0.035757"/>
+<status status="PASS" start="2025-01-28T20:01:03.510309" elapsed="0.041595"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:35.861039" level="INFO">Typing text 'David Santos' into text field 'xpath://input[@id="name"]'.</msg>
+<msg time="2025-01-28T20:01:03.552543" level="INFO">Typing text 'David Santos' into text field 'xpath://input[@id="name"]'.</msg>
 <arg>xpath://input[@id="name"]</arg>
 <arg>David Santos</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:35.860585" elapsed="0.090955"/>
+<status status="PASS" start="2025-01-28T20:01:03.552283" elapsed="0.107578"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:35.952244" level="INFO">Typing text 'Davids@gmail.com' into text field 'xpath://input[@id="email"]'.</msg>
+<msg time="2025-01-28T20:01:03.660387" level="INFO">Typing text 'Davids@gmail.com' into text field 'xpath://input[@id="email"]'.</msg>
 <arg>xpath://input[@id="email"]</arg>
 <arg>Davids@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:35.951943" elapsed="0.096980"/>
+<status status="PASS" start="2025-01-28T20:01:03.660175" elapsed="0.113059"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.049520" level="INFO">Typing text '915732864' into text field 'xpath://input[@id="phone"]'.</msg>
+<msg time="2025-01-28T20:01:03.774271" level="INFO">Typing text '915732864' into text field 'xpath://input[@id="phone"]'.</msg>
 <arg>xpath://input[@id="phone"]</arg>
 <arg>915732864</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.049311" elapsed="0.133282"/>
+<status status="PASS" start="2025-01-28T20:01:03.773973" elapsed="0.151340"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.183160" level="INFO">Clicking element 'xpath://input[@id="male"]'.</msg>
+<msg time="2025-01-28T20:01:03.925852" level="INFO">Clicking element 'xpath://input[@id="male"]'.</msg>
 <arg>xpath://input[@id="male"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.182913" elapsed="0.083185"/>
+<status status="PASS" start="2025-01-28T20:01:03.925630" elapsed="0.066897"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.266644" level="INFO">Clicking element 'xpath://input[@id="sunday"]'.</msg>
+<msg time="2025-01-28T20:01:03.993065" level="INFO">Clicking element 'xpath://input[@id="sunday"]'.</msg>
 <arg>xpath://input[@id="sunday"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.266404" elapsed="0.055126"/>
+<status status="PASS" start="2025-01-28T20:01:03.992875" elapsed="0.057531"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.322018" level="INFO">Clicking element 'xpath://input[@id="tuesday"]'.</msg>
+<msg time="2025-01-28T20:01:04.050948" level="INFO">Clicking element 'xpath://input[@id="tuesday"]'.</msg>
 <arg>xpath://input[@id="tuesday"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.321840" elapsed="0.059288"/>
+<status status="PASS" start="2025-01-28T20:01:04.050698" elapsed="0.057585"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.381742" level="INFO">Clicking element 'xpath://input[@id="saturday"]'.</msg>
+<msg time="2025-01-28T20:01:04.108987" level="INFO">Clicking element 'xpath://input[@id="saturday"]'.</msg>
 <arg>xpath://input[@id="saturday"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.381512" elapsed="0.066221"/>
+<status status="PASS" start="2025-01-28T20:01:04.108699" elapsed="0.067532"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.448856" level="INFO">Selecting options from selection list 'xpath://select[@id="country"]' by value brazil.</msg>
+<msg time="2025-01-28T20:01:04.176888" level="INFO">Selecting options from selection list 'xpath://select[@id="country"]' by value brazil.</msg>
 <arg>xpath://select[@id="country"]</arg>
 <arg>brazil</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.448534" elapsed="0.072524"/>
+<status status="PASS" start="2025-01-28T20:01:04.176682" elapsed="0.060168"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.521567" level="INFO">Selecting options from selection list 'xpath://select[@id="colors"]' by values green, white.</msg>
+<msg time="2025-01-28T20:01:04.237396" level="INFO">Selecting options from selection list 'xpath://select[@id="colors"]' by values green, white.</msg>
 <arg>xpath://select[@id="colors"]</arg>
 <arg>green</arg>
 <arg>white</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.521360" elapsed="0.130423"/>
+<status status="PASS" start="2025-01-28T20:01:04.237173" elapsed="0.131390"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.652289" level="INFO">Selecting options from selection list 'xpath://select[@id="animals"]' by values dog, fox.</msg>
+<msg time="2025-01-28T20:01:04.369106" level="INFO">Selecting options from selection list 'xpath://select[@id="animals"]' by values dog, fox.</msg>
 <arg>xpath://select[@id="animals"]</arg>
 <arg>dog</arg>
 <arg>fox</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.652086" elapsed="0.095930"/>
+<status status="PASS" start="2025-01-28T20:01:04.368899" elapsed="0.089774"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.748516" level="INFO">Typing text '01/17/2025' into text field 'xpath://input[@id="datepicker"]'.</msg>
+<msg time="2025-01-28T20:01:04.459172" level="INFO">Typing text '01/17/2025' into text field 'xpath://input[@id="datepicker"]'.</msg>
 <arg>xpath://input[@id="datepicker"]</arg>
 <arg>01/17/2025</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.748313" elapsed="0.092794"/>
+<status status="PASS" start="2025-01-28T20:01:04.458975" elapsed="0.094293"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.842705" level="INFO">Clicking element 'xpath://input[@id="txtDate"]'.</msg>
+<msg time="2025-01-28T20:01:04.553856" level="INFO">Clicking element 'xpath://input[@id="txtDate"]'.</msg>
 <arg>xpath://input[@id="txtDate"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.841741" elapsed="0.084764"/>
-</kw>
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>xpath://select[@class="ui-datepicker-year"]</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.926915" elapsed="0.023280"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:36.951021" level="INFO">Selecting options from selection list 'xpath://select[@class="ui-datepicker-year"]' by value 2016.</msg>
-<arg>xpath://select[@class="ui-datepicker-year"]</arg>
-<arg>2016</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-01-30T14:23:36.950675" elapsed="0.077120"/>
-</kw>
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>xpath://select[@class="ui-datepicker-month"]</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.028208" elapsed="0.018336"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.047510" level="INFO">Selecting options from selection list 'xpath://select[@class="ui-datepicker-month"]' by value 2.</msg>
-<arg>xpath://select[@class="ui-datepicker-month"]</arg>
-<arg>2</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.047225" elapsed="0.098520"/>
+<status status="PASS" start="2025-01-28T20:01:04.553630" elapsed="0.080322"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.146479" level="INFO">Clicking element 'xpath://a[@data-date="12"]'.</msg>
+<msg time="2025-01-28T20:01:04.634500" level="INFO">Clicking element 'xpath://select[@aria-label="Select year"]' with "2016".</msg>
+<msg time="2025-01-28T20:01:04.844887" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T20:01:04.845046" level="FAIL">ValueError: '"2016"' modifier does not match to Selenium Keys</msg>
+<arg>xpath://select[@aria-label="Select year"]</arg>
+<arg>"2016"</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-28T20:01:04.634253" elapsed="0.216133">ValueError: '"2016"' modifier does not match to Selenium Keys</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://select[@aria-label="Select month"]</arg>
+<arg>"2"</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-28T20:01:04.850716" elapsed="0.000070"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
 <arg>xpath://a[@data-date="12"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.146151" elapsed="0.071872"/>
+<status status="NOT RUN" start="2025-01-28T20:01:04.850961" elapsed="0.000027"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.218588" level="INFO">Typing text '01/01/2025' into text field 'xpath://input[@id="start-date"]'.</msg>
-<arg>xpath://input[@id="start-date"]</arg>
-<arg>01/01/2025</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.218349" elapsed="0.067991"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-28T20:01:04.851216" elapsed="0.000028"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.286869" level="INFO">Typing text '05/01/2025' into text field 'xpath://input[@id="end-date"]'.</msg>
-<arg>xpath://input[@id="end-date"]</arg>
-<arg>05/01/2025</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.286674" elapsed="0.084383"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.371771" level="INFO">Clicking button 'xpath://button[text()="Submit"]'.</msg>
-<arg>xpath://button[text()="Submit"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.371565" elapsed="0.093326"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.488978" level="INFO">Element 'xpath://div[@id="result"]' is displayed.</msg>
-<arg>xpath://div[@id="result"]</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.465201" elapsed="0.023870"/>
-</kw>
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.489606" level="INFO">Sending C:\Users\david.d.santos\Pictures\XPATH.png to browser.</msg>
-<arg>xpath://input[@id="singleFileInput"]</arg>
-<arg>C:\\Users\\david.d.santos\\Pictures\\XPATH.png</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.489408" elapsed="0.031294"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.521195" level="INFO">Clicking button 'xpath://button[text()="Upload Single File"]'.</msg>
-<arg>xpath://button[text()="Upload Single File"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.521005" elapsed="0.073289"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-01-30T14:23:37.614216" level="INFO">Element 'xpath://p[@id="singleFileStatus"]' is displayed.</msg>
-<arg>xpath://p[@id="singleFileStatus"]</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.594871" elapsed="0.019479"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://p[@id="singleFileStatus"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T14:23:37.614822" elapsed="0.010742"/>
-</kw>
-<status status="PASS" start="2025-01-30T14:23:30.754303" elapsed="6.872095"/>
+<status status="FAIL" start="2025-01-28T20:00:59.474163" elapsed="5.377278">ValueError: '"2016"' modifier does not match to Selenium Keys</status>
 </test>
-<status status="PASS" start="2025-01-30T14:23:30.329332" elapsed="7.298175"/>
+<status status="FAIL" start="2025-01-28T20:00:59.048604" elapsed="5.803659"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Desafio001" id="s1" pass="1" fail="0" skip="0">Desafio001</stat>
+<stat name="Desafio001" id="s1" pass="0" fail="1" skip="0">Desafio001</stat>
 </suite>
 </statistics>
 <errors>

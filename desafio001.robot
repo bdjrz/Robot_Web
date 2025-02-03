@@ -30,4 +30,4 @@ Preencher o formulario
     Click Button    xpath://button[text()="Upload Single File"]
     Element Should Be Visible    xpath://p[@id="singleFileStatus"]
     Wait Until Element Is Visible    xpath://p[@id="singleFileStatus"]
-     # Realizar um upload de um arquivo.
+    
