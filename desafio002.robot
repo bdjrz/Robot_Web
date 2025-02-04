@@ -44,6 +44,7 @@ Excluir um produto do carrinho
      Click Button    xpath://button[text()="Remove"]
      Click Button    xpath://button[text()="Remove"]
      Click Button    xpath://button[text()="Remove"]
+     Element Should Not Be Visible    xpath://div[@class="cart_item_label"]
      Sleep    5
      # Logar na aplicação https://www.saucedemo.com/
      # Entrar na aplicação e no carrinho.
